@@ -1,0 +1,11 @@
+view scored survey response:
+  title: 'View Scored Survey Responses'
+add scored survey response:
+  title: 'Add Scored Survey Response'
+edit scored survey response:
+  title: 'Edit Scored Survey Response'
+delete scored survey response:
+  title: 'Delete Scored Survey Response Entity'
+administer scored survey response:
+  title: 'Administer Scored Survey Response Entity'
+  restrict access: TRUE

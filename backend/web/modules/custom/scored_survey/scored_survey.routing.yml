@@ -1,0 +1,46 @@
+entity.scored_survey_response.canonical:
+  path: '/scored-survey-response/{scored_survey_response}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the response
+    _entity_view: 'scored_survey_response'
+    _title: 'Scored Survey Response'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'scored_survey_response.view'
+
+entity.scored_survey_response.collection:
+  path: '/scored-survey-response/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the response.
+    _entity_list: 'scored_survey_response'
+    _title: 'Survey Responses'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'view scored survey response'
+
+scored_survey.response_add:
+  path: '/scored-survey-response/add'
+  defaults:
+  # Calls the form.add controller, defined in the response.
+    _entity_form: scored_survey_response.add
+    _title: 'Add Response'
+requirements:
+  _entity_access: 'scored_survey_response.add'
+
+entity.scored_survey_response.edit_form:
+  path: '/scored-survey-response/{scored_survey_response}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the response.
+    _entity_form: scored_survey_response.edit
+    _title: 'Edit Response'
+  requirements:
+    _entity_access: 'scored_survey_response.edit'
+
+entity.scored_survey_response.delete_form:
+  path: '/scored-survey-response/{scored_survey_response}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the response.
+    _entity_form: scored_survey_response.delete
+    _title: 'Delete Response'
+  requirements:
+    _entity_access: 'scored_survey_response.delete'

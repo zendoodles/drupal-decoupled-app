@@ -1,0 +1,7 @@
+name: Scored Survey
+type: module
+description: 'Provides a scored survey storage entity.'
+core: 8.x
+dependencies:
+  - options
+  - entity_reference
