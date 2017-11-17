@@ -1,0 +1,19 @@
+uuid: 167f1210-f0e6-467b-b996-99dcc85ab970
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_question_text
+    - paragraphs.paragraphs_type.scored_polar_question
+id: paragraph.scored_polar_question.field_question_text
+field_name: field_question_text
+entity_type: paragraph
+bundle: scored_polar_question
+label: 'Question Text'
+description: 'Please enter a polar question. https://en.wikipedia.org/wiki/Yes%E2%80%93no_question'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: a6f13156-b69c-4ef8-9266-189d0da4eb0f
+langcode: en
+status: true
+dependencies: {  }
+id: scored_polar_question
+label: 'Scored Polar Question'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

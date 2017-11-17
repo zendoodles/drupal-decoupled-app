@@ -1,0 +1,37 @@
+uuid: 43f78aea-7ba2-4fa9-b4dc-edd351ce1fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.survey.body
+    - field.field.node.survey.field_questions
+    - node.type.survey
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.survey.default
+targetEntityType: node
+bundle: survey
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_questions:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

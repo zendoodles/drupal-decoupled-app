@@ -1,0 +1,23 @@
+uuid: 02c4e9b0-ed1e-4fb7-afdd-38395738afab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_yes_score
+    - paragraphs.paragraphs_type.scored_polar_question
+id: paragraph.scored_polar_question.field_yes_score
+field_name: field_yes_score
+entity_type: paragraph
+bundle: scored_polar_question
+label: 'Yes Score'
+description: 'Provide a score associated with a "yes" value for this question.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

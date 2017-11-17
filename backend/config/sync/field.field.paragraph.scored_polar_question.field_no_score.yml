@@ -1,0 +1,23 @@
+uuid: d81fb638-f625-49ad-8f50-1d6381b438fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_no_score
+    - paragraphs.paragraphs_type.scored_polar_question
+id: paragraph.scored_polar_question.field_no_score
+field_name: field_no_score
+entity_type: paragraph
+bundle: scored_polar_question
+label: 'No Score'
+description: 'Provide a score associated with a "no" value for this question.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,41 @@
+uuid: a92e7a3a-e4aa-4284-a7d2-3e29b611811c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.scored_polar_question.field_no_score
+    - field.field.paragraph.scored_polar_question.field_question_text
+    - field.field.paragraph.scored_polar_question.field_yes_score
+    - paragraphs.paragraphs_type.scored_polar_question
+id: paragraph.scored_polar_question.default
+targetEntityType: paragraph
+bundle: scored_polar_question
+mode: default
+content:
+  field_no_score:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_question_text:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_yes_score:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

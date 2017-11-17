@@ -1,0 +1,31 @@
+uuid: d863330d-801a-4513-a112-058d2c4631da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_questions
+    - node.type.survey
+    - paragraphs.paragraphs_type.scored_polar_question
+  module:
+    - entity_reference_revisions
+id: node.survey.field_questions
+field_name: field_questions
+entity_type: node
+bundle: survey
+label: Questions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      scored_polar_question: scored_polar_question
+    target_bundles_drag_drop:
+      scored_polar_question:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
